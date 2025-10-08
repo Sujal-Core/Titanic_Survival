@@ -1,14 +1,10 @@
-Here’s a polished and complete version of your README for the **Titanic Survival Prediction** project. I’ve refined formatting, added missing steps, and made it portfolio-ready:
-
----
-
 # Titanic Survival Prediction
 
 Predict Titanic passenger survival using a **stacked ensemble of machine learning models** with **explainable AI** through SHAP. Built as a **Streamlit app**, this project demonstrates data preprocessing, feature engineering, model stacking, and interpretability.
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This project predicts whether a Titanic passenger survived using a **stacked ensemble** of the following models:
 
@@ -27,7 +23,6 @@ The app uses the following features:
 * **Pclass** – Passenger class (1st, 2nd, 3rd)
 * **Sex** – Male or Female
 * **Age** – Passenger age
-* **Parch** – Number of parents/children aboard
 * **IsAlone** – Derived feature: 1 if passenger is alone, 0 otherwise
 * **Embarked** – Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
 * **Deck** – Deck of cabin
@@ -40,11 +35,10 @@ The app uses the following features:
 Titanic_Survival/
 ├─ models/                  # Pre-trained model files (Random Forest, Gradient Boosting, Stacked XGBoost)
 ├─ data/                    # Optional: dataset files (X_train.csv, y_train.csv, etc.)
-├─ titanic_app_minimal.py   # Streamlit app for interactive predictions
+├─ Streamlit.py   # Streamlit app for interactive predictions
 ├─ train.py                 # Training script
 ├─ test.py                  # Testing / evaluation script
 ├─ requirements.txt         # Python dependencies
-├─ LICENSE                  # MIT License
 └─ README.md                # Project documentation
 ```
 
@@ -124,4 +118,3 @@ Install all dependencies via:
 pip install -r requirements.txt
 ```
 
----
