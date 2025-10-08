@@ -1,41 +1,127 @@
-# Titanic_Survival
-A  Titanic Survival Prediction app using a stacked ensemble of machine learning models (Random Forest, Gradient Boosting, and XGBoost) with SHAP explanations for feature contributions. This project demonstrates data preprocessing, feature engineering, model stacking, and explainable AI, all in Streamlit app suitable for  portfolio projects.
-
-
-Predict Titanic passenger survival using machine learning and explainable AI.
+Here’s a polished and complete version of your README for the **Titanic Survival Prediction** project. I’ve refined formatting, added missing steps, and made it portfolio-ready:
 
 ---
 
-## Overview
+# Titanic Survival Prediction
 
-This project uses a **stacked ensemble** of machine learning models:
-
-- Random Forest  
-- Gradient Boosting  
-- XGBoost (stacked)  
-
-Additionally, **SHAP** is used to interpret feature contributions, and a **Streamlit app** allows interactive survival predictions.
+Predict Titanic passenger survival using a **stacked ensemble of machine learning models** with **explainable AI** through SHAP. Built as a **Streamlit app**, this project demonstrates data preprocessing, feature engineering, model stacking, and interpretability.
 
 ---
 
-## Features
+## 🚀 Overview
 
-- Pclass (Passenger class)  
-- Sex  
-- Age  
-- Parch (Parents/Children aboard)  
-- IsAlone (derived from family info)  
-- Embarked (Port of embarkation)  
-- Deck  
+This project predicts whether a Titanic passenger survived using a **stacked ensemble** of the following models:
+
+* **Random Forest**
+* **Gradient Boosting**
+* **XGBoost**
+
+**SHAP** is used to interpret feature contributions, providing insights into model predictions. A **Streamlit app** enables interactive passenger survival prediction.
 
 ---
 
-## Quick Start
+## ✨ Features
 
-1. **Clone the repository**  
+The app uses the following features:
+
+* **Pclass** – Passenger class (1st, 2nd, 3rd)
+* **Sex** – Male or Female
+* **Age** – Passenger age
+* **Parch** – Number of parents/children aboard
+* **IsAlone** – Derived feature: 1 if passenger is alone, 0 otherwise
+* **Embarked** – Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
+* **Deck** – Deck of cabin
+
+---
+
+## 📦 Project Structure
+
+```
+Titanic_Survival/
+├─ models/                  # Pre-trained model files (Random Forest, Gradient Boosting, Stacked XGBoost)
+├─ data/                    # Optional: dataset files (X_train.csv, y_train.csv, etc.)
+├─ titanic_app_minimal.py   # Streamlit app for interactive predictions
+├─ train.py                 # Training script
+├─ test.py                  # Testing / evaluation script
+├─ requirements.txt         # Python dependencies
+├─ LICENSE                  # MIT License
+└─ README.md                # Project documentation
+```
+
+---
+
+## ⚡ Quick Start
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/Titanic_Survival.git
 cd Titanic_Survival
+```
 
-2. **Create and activate virtual environment**  
+### 2. Create and activate a virtual environment
+
+```bash
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit app
+
+```bash
+streamlit run titanic_app_minimal.py
+```
+
+---
+
+## 🖥 Usage
+
+1. Enter passenger details:
+
+   * Age
+   * Sex
+   * Passenger Class
+   * Family Info
+   * Port of Embarkation
+   * Deck
+
+2. Click **Predict**.
+
+3. View results:
+
+   * **Survival probability**
+   * **Prediction** (Survived / Did Not Survive)
+   * **SHAP explanations** showing feature contributions
+
+---
+
+## 📊 Model Training & Testing
+
+* **train.py** – Preprocess data, train Random Forest, Gradient Boosting, and Stacked XGBoost models, and save them to `models/`.
+* **test.py** – Evaluate models on test data.
+
+---
+
+## 🔧 Dependencies
+
+* Python >= 3.9
+* pandas, numpy, scikit-learn
+* xgboost, shap
+* streamlit, matplotlib, seaborn
+
+Install all dependencies via:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
