@@ -49,7 +49,7 @@ Titanic_Survival/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Titanic_Survival.git
+git clone https://github.com/Sujal-Core/Titanic_Survival.git
 cd Titanic_Survival
 ```
 
@@ -112,9 +112,4 @@ streamlit run titanic_app_minimal.py
 * xgboost, shap
 * streamlit, matplotlib, seaborn
 
-Install all dependencies via:
-
-```bash
-pip install -r requirements.txt
-```
 
