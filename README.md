@@ -72,7 +72,7 @@ pip install -r requirements.txt
 ### 4. Run the Streamlit app
 
 ```bash
-streamlit run titanic_app_minimal.py
+streamlit run streamlit.py
 ```
 
 ---
